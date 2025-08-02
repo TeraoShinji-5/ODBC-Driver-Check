@@ -2,7 +2,7 @@ import azure.functions as func
 import pyodbc
 import logging
 
-def odbc_driver_check(req: func.HttpRequest) -> func.HttpResponse:
+def main(req: func.HttpRequest) -> func.HttpResponse:
     try:
         # 利用可能なドライバー一覧
         drivers = pyodbc.drivers()
